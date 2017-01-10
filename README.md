@@ -1,12 +1,13 @@
-PaperColor Theme
+Paper(less)Color Theme
 ===================
-[![license](https://img.shields.io/github/license/NLKNguyen/papercolor-theme.svg?maxAge=2592000)](https://github.com/NLKNguyen/papercolor-theme/blob/master/LICENSE) [![](https://img.shields.io/github/issues-raw/NLKNguyen/papercolor-theme.svg?maxAge=2592000)](https://github.com/NLKNguyen/papercolor-theme/issues) [![](https://img.shields.io/github/issues-closed-raw/NLKNguyen/papercolor-theme.svg?maxAge=2592000)](https://github.com/NLKNguyen/papercolor-theme/issues) [![GitHub release](https://img.shields.io/github/release/NLKNguyen/papercolor-theme.svg)](https://github.com/NLKNguyen/papercolor-theme/releases) [![Travis CI Build Status](https://travis-ci.org/NLKNguyen/papercolor-theme.svg?branch=master)](https://travis-ci.org/NLKNguyen/papercolor-theme)
 
 *Note*: The current document has not been updated for the current stage of the project. Some information apply only for version 0.7 and earlier.
 
 Light & Dark color schemes for **Vim** terminal editor and **gVim**
 
 Inspired by Google's Material Design
+
+**Now with less syntax highlighting!**
 
 Improve code readability; great for presentation
 
@@ -19,11 +20,11 @@ Plugin support: vimdiff, netrw, [NERDTree](https://github.com/scrooloose/nerdtre
 (see below for syntax-highlighting plugins target)
 
 ## Installation
-Place 'PaperColor.vim' file into 'colors' folder within your Vim directory, e.g. `~/.vim/colors/`
+Place 'PaperlessColor.vim' file into 'colors' folder within your Vim directory, e.g. `~/.vim/colors/`
 
-Or simply use a plugin manager like [Vundle](https://github.com/gmarik/Vundle.vim) (recommended for easy `:PluginUpdate`):
+Or simply use a plugin manager like [Plug](https://github.com/junegunn/vim-plug) (recommended for easy `:PlugUpdate`):
 
-    Plugin 'NLKNguyen/papercolor-theme'
+    Plug 'duckwork/paperlesscolor-theme'
 
 Then, put this in your `~/.vimrc`
 
@@ -31,14 +32,14 @@ Then, put this in your `~/.vimrc`
 set t_Co=256   " This is may or may not needed.
 
 set background=light
-colorscheme PaperColor
+colorscheme paperlesscolor
 ```
 
 Or using the dark version: 
 
 ```VimL
 set background=dark
-colorscheme PaperColor
+colorscheme paperlesscolor
 ```
 
 To switch to dark or light variant during session: `:set background=dark` or `:set background=light`
@@ -88,55 +89,11 @@ There are syntax highlighting enhancement plugins that improve upon Vim built-in
 
 ## Screenshots
 
-![Sample Ruby code](https://nlknguyen.files.wordpress.com/2015/05/ruby1.png)
-
-![Sample DTrace code](https://nlknguyen.files.wordpress.com/2015/05/dtrace1.png)
-
-![Sample MySQL code](https://nlknguyen.files.wordpress.com/2015/05/mysql.png)
-
-![Sample Assembly code](https://nlknguyen.files.wordpress.com/2015/05/asm.png)
-
-*Note*: The background of the dark color scheme was brightened a bit to reduce contrast after these following screenshots were taken.
-
-![Sample Ruby code](https://nlknguyen.files.wordpress.com/2015/05/ruby-dark.png)
-
-![Sample Go code](https://nlknguyen.files.wordpress.com/2015/05/go-dark.png)
-
-![Sample JavaScript code](https://nlknguyen.files.wordpress.com/2015/05/javascript-dark2.png)
-
-![Sample C code](https://nlknguyen.files.wordpress.com/2015/05/c-dark-split.png)
-
-![Vim-airline support](https://nlknguyen.files.wordpress.com/2015/05/gifrecord_2015-05-31_010251.gif)
-
-To set [vim-airline](https://github.com/bling/vim-airline) theme:
-
-    let g:airline_theme='papercolor'
-
-To set [lightline](https://github.com/itchyny/lightline.vim) theme:
-
-    let g:lightline = { 'colorscheme': 'PaperColor' }
+_We ain't got none of them fancy screenshots!_
 
 For more sceenshots, story behind the project, and other users' designs inspired by Paper Color, go to [this blog post](http://nlknguyen.com/2015/05/21/vim-paper-color-theme/)
 
 Suggestions/Wishes/Questions/Comments are welcome via [Github issues](https://github.com/NLKNguyen/papercolor-theme/issues) or via the blog above.
 
-# Related Projects Based On PaperColor
-[Material iTerm](https://github.com/stoeffel/material-iterm) theme by Christoph Hermann
-
-[Material Terminator](https://github.com/marhs/material-terminator) (terminal emulator) theme by Marco Herrero
-
-[Terminal Theme](https://www.reddit.com/r/vim/comments/36xzbs/vim_paper_color_theme_inspired_by_googles/crqbfpa) by Fixles
-
-[PaperColor Light for iTerm2](https://github.com/aseom/dotfiles/blob/master/osx/iterm2/papercolor-light.itermcolors) by ASeom Han
-
-[PaperColor Theme for Vis Editor](https://github.com/jceb/dotfiles/blob/master/config/vis/lexers/themes/papercolor.lua) by Jan Christoph Ebersbach
-
-[Airline PaperColor Theme for Emacs Powerline](https://github.com/AnthonyDiGirolamo/airline-themes) by Anthony DiGirolamo
-
-[Airline PaperColor Theme for Vim Lightline](https://github.com/itchyny/lightline.vim)
-
-[Ninrod's `vim + tmux + zsh` dotfiles](https://github.com/ninrod/dotfiles.git) by [Filipe Silva](https://github.com/ninrod)
-
-[PaperColor for Vscode](https://github.com/Rozbo/papercolor-vscode) by [rozbo](https://github.com/rozbo)
-
-Feel free to add related projects here!
+# Related Projects Based On Paper(Less)Color
+The original [PaperColor](http://github.com/NLKNguyen/papercolor-theme) project is a great colorscheme, but I want fewer highlight groups.  Thus, Paper(Less)Color.
